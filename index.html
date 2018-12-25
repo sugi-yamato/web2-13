@@ -1,0 +1,30 @@
+<<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8" />
+    <title>初めてのmBasS</title>
+ 
+</head>
+<script type="text/javascript" src="ncmb.min.js" charset="utf-8"></script>
+<script>
+
+    var ncmb = new NCMB("ef49b99a7ea417877ffeadcc6cafdfd9cf53343483335947b6f775e072ef2f63","68e101080e5dacab01ee2b4839dabdd31fd60ead27ac04a1a99784691d142242");
+
+    var TestClass = ncmb.DataStore("TestClass");
+
+    var testClass = new TestClass();
+
+    testClass.set("message","Hello,NCMB!");
+    testClass.save()
+      .then(function(){
+
+
+      })
+      .catch(function(err){
+
+      });
+
+</script>
+
+</html>>
